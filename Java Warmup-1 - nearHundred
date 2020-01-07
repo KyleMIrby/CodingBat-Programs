@@ -1,0 +1,13 @@
+// method that returns true if the the given int value is within 10 of 100 or 200
+// parameters:
+// n - an int value
+public boolean nearHundred(int n) {
+  // returns true if n is within 10 from 100 or 200
+  // returns false if this condition is not met
+  if(Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
