@@ -1,0 +1,17 @@
+// method that returns true if one int value is positive and the other is negative
+// if negative is true, both int values must be negative to return true
+// parameters:
+// a - an int value
+// b - an int value
+// negative - can be true or false
+public boolean posNeg(int a, int b, boolean negative) {
+  // returns true if negative is false and one of the int values is positive and the other is negative
+  // returns true if negative is true and both int values are negative
+  // returns false if these conditions are not met
+  if((negative && a < 0 && b < 0) || (!negative && ((a < 0 && b > 0) || (a > 0 && b < 0)))) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
