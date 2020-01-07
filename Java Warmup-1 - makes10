@@ -1,0 +1,14 @@
+// method that returns true if two int values equal 10 or if one of them is already 10
+// parameters:
+// a - an int value
+// b - an int value
+public boolean makes10(int a, int b) {
+  // returns true if a or be are 10, or if their sum is 10
+  // returns false if these conditions are not met
+  if(a == 10 || b == 10 || a + b == 10) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
