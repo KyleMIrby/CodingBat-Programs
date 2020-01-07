@@ -1,4 +1,4 @@
-// method to determine if the user can sleep in on the given day
+// method to determine if the user can sleep in on a given day, based on the parameters
 // parameters:
 // weekday - true if the day is during the week, false if it is a weekend
 // vacation - true if it is a vacation day, false if not
