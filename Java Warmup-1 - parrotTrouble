@@ -1,0 +1,14 @@
+// method that returns true if the parrot is talking between 8PM and 7AM
+// parameters:
+// talking - true if the parrot is talking, false if not
+// hour - the hour of the day, between 0 and 23
+public boolean parrotTrouble(boolean talking, int hour) {
+  // returns true if the parrot is talking between 8PM and 7AM
+  // returns false if the parrot is not talking between 8PM and 7AM or if it is talking between 7AM and 8PM
+  if(talking && (hour < 7 || hour > 20)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
