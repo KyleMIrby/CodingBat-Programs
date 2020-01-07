@@ -1,0 +1,16 @@
+// method that returns the sum of two int values, unless the values are equal, in which case it returns double the sum
+// parameters:
+// a - an int value
+// b - an int value
+public int sumDouble(int a, int b) {
+  // returns the sum of a and b if a and b are different int values
+  // returns double the sum of a and b if a and b are equal
+  if (a == b)
+  {
+    return (a + b) * 2;
+  }
+  else
+  {
+    return a + b;
+  }
+}
