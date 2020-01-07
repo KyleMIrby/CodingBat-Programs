@@ -1,0 +1,16 @@
+// method that takes parameters for whether monkey a or b are smiling
+// parameters:
+// aSmile - true if monkey a is smiling, false if not
+// bSmile - true if monkey b is smiling, false if not
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  // returns true if both monkeys are smiling or if neither of them are
+  // returns false if these options are not met
+  if((aSmile && bSmile) || (!aSmile && !bSmile))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
