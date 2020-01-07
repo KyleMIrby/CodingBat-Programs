@@ -1,0 +1,33 @@
+// method that counts the number of words ending in 'y' or 'z' in a given string and returns the count
+// parameters:
+// str - a string
+public int countYZ(String str) {
+  // converts the string to lower case
+  str = str.toLowerCase();
+  // initializes a counter variable
+  int count = 0;
+  // conditional to make sure the string is longer than one character
+  if(str.length() == 1) {
+    if(str.charAt(0) == 'y' || str.charAt(0) == 'z') {
+      count++;
+    }
+  }
+  else {
+    // if the string is longer than one character, a for loop goes through each index, starting at the 1 index
+    for(int i = 1; i < str.length(); i++) {
+      // if the index does not contain an alphabetical letter, the previous index is looked at
+      // if the previous index is a 'y' or 'z', the counter increases by 1
+      if(!Character.isLetter(str.charAt(i))) {
+        if(str.charAt(i - 1) == 'y' || str.charAt(i - 1) == 'z') {
+          count++;
+        }
+      }
+    }
+    // looks at the final index of the string to see if it ends with a 'y' or 'z', if so, the counter is increased by 1
+    if(str.charAt(str.length() - 1) == 'y' || str.charAt(str.length() - 1) == 'z') {
+      count++;
+    }
+  }
+  // returns the counter value
+  return count;
+}
