@@ -1,4 +1,10 @@
+// method to determine if the user can sleep in on the given day
+// parameters:
+// weekday - true if the day is during the week, false if it is a weekend
+// vacation - true if it is a vacation day, false if not
 public boolean sleepIn(boolean weekday, boolean vacation) {
+  // returns true if it is not a weekday or it is a vacation day
+  // returns false if it is a weekday and not a vacation day
   if(weekday == false || vacation == true)
   {
     return true;
