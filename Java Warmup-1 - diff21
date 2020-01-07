@@ -1,0 +1,13 @@
+// method that determines the absolute difference between a certain value and 21
+// if the value being compared is greater than 21, the difference is doubled
+// parameters:
+// n - an int value
+public int diff21(int n) {
+  // returns the absolute difference between n and 21 if n is less than 21, and double the difference if n is greater than 21
+  if(n > 21) {
+    return (n - 21) * 2;
+  }
+  else {
+    return 21 - n;
+  }
+}
